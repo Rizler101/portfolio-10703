@@ -219,15 +219,18 @@ img {
 
 .home__blob {
   fill: var(--first-color);
-  width: 65%;           /* Responsive width */
-  max-width: 770spx;     /* Prevent it from growing too big */
-  height: auto;         /* Maintain aspect ratio */
+  width: 75%;           /* Responsive width */
+  max-width: 770px;     /* Prevent it from growing too big */
+  height: 500px;        /* Maintain aspect ratio */
+  position: relative;
 }
 
 .home__blob-img {
-  width: 525px;
+  position: absolute;
+  object-position: center 50%;
+  left: 50%;
+  transform: translate(-7%, calc(-50% + 60px)); /* Added 27px to move down */
 }
-
 /*BUTTONS*/
 .button {
   display: inline-block;
@@ -398,7 +401,7 @@ img {
     margin-right: var(--mb-4);
   }
   .home__img {
-    width: 300px;
+    width: 400px;
     bottom: 25%;
   }
   .about__container {
